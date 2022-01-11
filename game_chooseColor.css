@@ -1,0 +1,117 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FEC5BB;
+}
+
+#mainBox{
+    margin: 2rem;
+}
+
+#screenBox{
+    margin: 1rem 5rem 0rem 5rem;
+    background-color: #FCD5CE;
+    text-align: center;
+}
+#colorRGB{
+    margin: 2rem;
+    font-size: 3rem;
+    color: #590D22;
+}
+#title{
+    font-size: 1.6rem;
+    color: #FF758F;
+}
+
+#toolBar{
+    margin: 1rem 5rem 0rem 5rem;
+    text-align: center;
+    background-color: #FAE1DD;
+    padding: 0.4rem;
+}
+#toolBar button{
+    margin: 2rem;
+    border: none;
+    background-color: #F8EDEB;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#toolBar button:hover{
+    background-color: #D8E2DC;
+}
+
+#groupButton_ChooseColor{
+    margin: 1rem 5rem 0rem 5rem;
+}
+.grid-hardGame,
+.grid{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#easeGame{
+    display: none;
+}
+.row{
+    width: 33.333%;
+    height: 8rem;
+}
+.box{
+    width: 50%;
+    background-color: #FF4D6D;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#notifiCorrect{
+    color: red;
+    font-weight: bold;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    #screenBox{
+       margin: 0;
+    }
+    #colorRGB{
+        margin:0;
+        font-size: 2rem;
+        color: #590D22;
+    }
+    #title{
+        font-size: 0.6rem;
+        margin-top: 0.2rem;
+        color: #FF758F;
+    }
+    #toolBar{
+        margin: 1rem;
+        text-align: center;
+        background-color: #FAE1DD;
+        padding: 0rem;
+    }
+    #toolBar button{
+        margin: 1rem;
+        border: none;
+        background-color: #F8EDEB;
+        font-size: 1.6rem;
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+    .row{
+        width: 30%;
+        margin: 0.2rem;
+        height: 8rem;
+    }
+    .box{
+        width: 100%;
+    }
+
+}
